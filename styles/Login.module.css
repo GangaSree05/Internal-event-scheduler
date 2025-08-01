@@ -1,0 +1,30 @@
+.container {
+  max-width: 400px;
+  margin: 80px auto;
+  padding: 20px;
+  background: #eef;
+  border-radius: 8px;
+}
+
+.input {
+  display: block;
+  width: 100%;
+  margin: 12px 0;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #888;
+}
+
+.button {
+  padding: 10px 15px;
+  background: #082e5a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: #082e5a;
+}

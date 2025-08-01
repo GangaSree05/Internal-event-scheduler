@@ -1,0 +1,16 @@
+.home-container {
+  text-align: center;
+  padding: 80px;
+  background: #f0f8ff;
+}
+.links a {
+  margin: 15px;
+  padding: 10px 20px;
+  background-color: #0070f3;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.links a:hover {
+  background-color: #005bb5;
+}

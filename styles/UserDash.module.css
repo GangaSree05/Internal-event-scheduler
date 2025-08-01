@@ -1,0 +1,96 @@
+.pageWrapper {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f7fc;
+  min-height: 100vh;
+  padding: 0 40px 40px;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #003366;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 0 0 0px 0px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  margin-left: -40px;
+  margin-right: -40px;
+}
+
+.navTitle {
+  font-size: 24px;
+  font-weight: bold;
+}
+.heading {
+  font-size: 36px;
+  text-align: center;
+  margin: 40px 0 20px;
+  color: #003366;
+}
+
+.navButton{
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  padding: 8px 16px;
+  border-radius: 5px;
+  font-size: 15px;
+  cursor: pointer;
+  margin-left: 1110px;
+  transition: all 0.
+}
+.logoutButton {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  padding: 8px 16px;
+  border-radius: 5px;
+  font-size: 15px;
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.navButton:hover,
+.logoutButton:hover {
+  background-color: white;
+  color: #003366;
+}
+
+/* Container for event cards */
+.container {
+  padding-top: 40px;
+}
+
+/* Event List */
+.eventList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+/* Event Card */
+.eventCard {
+  background-color: white;
+  border-left: 6px solid #003366;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.eventCard:hover {
+  transform: translateY(-3px);
+}
+
+.eventCard h3 {
+  margin: 0 0 10px;
+  color: #222;
+}
+
+.eventCard p {
+  margin: 4px 0;
+  color: #555;
+}
