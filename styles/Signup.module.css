@@ -2,7 +2,7 @@
   max-width: 400px;
   margin: 80px auto;
   padding: 20px;
-  background: #fcf8e3;
+  background: #eef;;
   border-radius: 8px;
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
   font-family: 'Segoe UI', sans-serif;
@@ -25,7 +25,7 @@
 .button {
   width: 100%;
   padding: 10px;
-  background: #28a745;
+  background: #082e5a;
   color: white;
   border-radius: 5px;
   border: none;
@@ -34,6 +34,4 @@
   margin-top: 10px;
 }
 
-.button:hover {
-  background: #218838;
-}
+
