@@ -6,8 +6,16 @@ export default function UserProfile() {
   const [user, setUser] = useState(null);
 
   useEffect(() => {
-    const storedUser = JSON.parse(localStorage.getItem('user'));
-    setUser(storedUser);
+    if (typeof window !== 'undefined') {
+      const storedUser = localStorage.getItem('user');
+      if (storedUser) {
+        try {
+          setUser(JSON.parse(storedUser));
+        } catch (err) {
+          console.error('Failed to parse user from localStorage:', err);
+        }
+      }
+    }
   }, []);
 
   if (!user) return <p>Loading...</p>;
