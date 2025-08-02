@@ -1,24 +1,26 @@
 'use client';
 import { useEffect, useState } from 'react';
+import { useRouter } from 'next/navigation';
 import styles from '../../../styles/Profile.module.css';
 
 export default function UserProfile() {
   const [user, setUser] = useState(null);
+  const [isClient, setIsClient] = useState(false);
+  const router = useRouter();
 
   useEffect(() => {
-    if (typeof window !== 'undefined') {
-      const storedUser = localStorage.getItem('user');
-      if (storedUser) {
-        try {
-          setUser(JSON.parse(storedUser));
-        } catch (err) {
-          console.error('Failed to parse user from localStorage:', err);
-        }
-      }
+    setIsClient(true);
+    const storedUser = localStorage.getItem('user');
+    if (storedUser) {
+      setUser(JSON.parse(storedUser));
     }
   }, []);
 
-  if (!user) return <p>Loading...</p>;
+  if (!isClient) return <p>Loading...</p>;
+  if (!user) {
+    router.push('/login'); // fallback
+    return null;
+  }
 
   return (
     <div className={styles.container}>
